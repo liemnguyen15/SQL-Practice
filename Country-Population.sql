@@ -318,19 +318,19 @@ INSERT INTO countries_by_population (country, population, percent_one_year_chang
 
 
 /* ALL */
-/* SELECT * from countries_by_population; */
+SELECT * from countries_by_population;
 
 /* MIN */
-/* SELECT country, MIN(population_change) AS min_populationChange FROM countries_by_population; */
+SELECT country, MIN(population_change) AS min_populationChange FROM countries_by_population;
 
 /* MAX */
-/* SELECT country, MAX(population_change) AS max_populationChange FROM countries_by_population; */
+SELECT country, MAX(population_change) AS max_populationChange FROM countries_by_population;
 
 /* AND/OR */
-/* SELECT country FROM countries_by_population WHERE median_age < 18 AND fertility_rate > 7; */
+SELECT country FROM countries_by_population WHERE median_age < 18 AND fertility_rate > 7;
 
 /* HAVING */
-/* SELECT country, SUM(population) as total_population FROM countries_by_population GROUP BY country HAVING total_population < 10000000; */
+SELECT country, SUM(population) AS total_population FROM countries_by_population GROUP BY country HAVING total_population < 10000000;
 
 /* CASE */
 SELECT COUNT(*),
@@ -338,6 +338,6 @@ SELECT COUNT(*),
         WHEN percent_one_year_change > 0 THEN "Positive"
         WHEN percent_one_year_change < 0 THEN "Negative"
         ELSE "No change"
-    END as "country growth"
+    END AS "country growth"
 FROM countries_by_population
 GROUP BY "country growth";
