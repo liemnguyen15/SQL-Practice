@@ -206,18 +206,17 @@ INSERT INTO picks (pick_number, name, college, picked_by, position)
 INSERT INTO picks (pick_number, name, college, picked_by, position)
 	VALUES(99,"Paul Dawson","TCU","Cincinnati","OLB");
 
-
 /* ALL */
-/* SELECT * FROM picks; */
+SELECT * FROM picks;
 
 /* IN */
-/* SELECT pick_number, name FROM picks WHERE position IN ("QB"); */
+SELECT pick_number, name FROM picks WHERE position IN ("QB");
 
 /* DISTINCT */
-/* SELECT DISTINCT college FROM picks; */
+SELECT DISTINCT college FROM picks;
 
 /* COUNT */
-/* SELECT COUNT(DISTINCT college) FROM picks; */
+SELECT COUNT(DISTINCT college) FROM picks;
 
 /* ORDER BY */
-/* SELECT pick_number, name FROM picks WHERE position in ("RB") ORDER BY pick_number DESC; */
+SELECT pick_number, name FROM picks WHERE position in ("RB") ORDER BY pick_number DESC;
