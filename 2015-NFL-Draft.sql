@@ -219,4 +219,4 @@ SELECT DISTINCT college FROM picks;
 SELECT COUNT(DISTINCT college) FROM picks;
 
 /* ORDER BY */
-SELECT pick_number, name FROM picks WHERE position in ("RB") ORDER BY pick_number DESC;
+SELECT pick_number, name FROM picks WHERE position IN ("RB") ORDER BY pick_number DESC;
